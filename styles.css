@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Roboto:wght@300&family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 72.5%;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    color: rgb(215, 175, 75);
+    background-color: rgb(25, 25, 35);
+    /* background-color: #60b347; */
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  height: 40vh;
+  border-bottom: 7.5px solid rgb(215, 175, 75);
+}
+
+main {
+  height: 70vh;
+  color: rgb(215, 175, 75);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 45rem;
+  font-size: 2.5rem;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  letter-spacing: 0.5rem;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  background: rgb(215, 175, 75);
+  color: #000;
+  font-size: 6rem;
+  width: 12.5rem;
+  padding: 2rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 7.5px;
+  transform: translate(-50%, 50%);
+}
+
+.number:hover {
+    background-color: rgb(225, 165, 50);
+}
+
+.between {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  letter-spacing: 0.25rem;
+}
+
+.guess {
+  background: none;
+  border: 5px solid rgb(215, 175, 75);
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 1rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+  border-radius: 7.5px;
+  letter-spacing: 0.25rem;
+}
+
+.btn {
+  border: none;
+  background-color: rgb(215, 175, 75);
+  color: #000;
+  font-size: 2.25rem;
+  font-family: inherit;
+  padding: 0.75rem 8.15rem;
+  border-radius: 7.5px;
+  cursor: pointer;
+  letter-spacing: 0.25rem;
+}
+
+.btn:hover {
+  background-color: rgb(225, 165, 50);
+}
+
+.message {
+  margin-bottom: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+  font-size: 2.75rem;
+  letter-spacing: 0.25rem;
+}
+
+.label-highscore { 
+    font-size: 2.75rem;
+    letter-spacing: 0.25rem;
+}
+
+.again {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.75rem 5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        height: 35vh;
+    }
+
+    main {
+        height: 50vh;
+        display: inline-block;
+    }
+
+    .left {
+        width: 100vw;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 15rem;
+    }
+
+    .right {
+        width: 100vw;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 10rem;
+    }
+
+    .between {
+        font-size: 2rem;
+        top: 2.5rem;
+    }
+
+    .guess {
+        font-size: 5rem;
+        padding: 0 15rem;
+    }
+
+    .btn {
+        font-size: 2.5rem;
+        font-family: inherit;
+        padding: 0.75rem 11rem;
+    }
+
+    .again {
+        padding: 0.5rem 1rem;
+    }
+
+    .message {
+        font-size: 3rem;
+    }
+
+    .label {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .label-score {
+        font-size: 2.25rem;
+        margin: 0%;
+        margin-right: 5rem;
+    }
+
+    .label-highscore { 
+        font-size: 2.25rem;
+    }
+  }
