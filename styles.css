@@ -68,10 +68,13 @@ h1 {
   left: 50%;
   border-radius: 7.5px;
   transform: translate(-50%, 50%);
+  /* background: #72d70c; */
+  /* background: #e31111; */
 }
 
 .number:hover {
     background-color: rgb(225, 165, 50);
+    animation: shake 0.5s;
 }
 
 .between {
@@ -103,8 +106,8 @@ h1 {
   color: #000;
   font-size: 2.25rem;
   font-family: inherit;
-  padding: 0.75rem 7.5rem;
-  border-radius: 7.5px;
+  padding: 0.75rem 7.75rem;
+  border-radius: 5px;
   cursor: pointer;
   letter-spacing: 0.25rem;
 }
@@ -134,10 +137,12 @@ h1 {
 
 .score{
   border: 2.5px solid rgb(225, 165, 50);
+  padding: 0 1rem;
 }
 
 .highscore{
   border: 2.5px solid rgb(225, 165, 50);
+  padding: 0 1rem;
 }
 
 .again {
@@ -207,7 +212,7 @@ h1 {
     .btn {
         font-size: 2.5rem;
         font-family: inherit;
-        padding: 0.75rem 10rem;
+        padding: 0.75rem 10.75rem;
     }
 
     .again {
@@ -233,4 +238,22 @@ h1 {
         font-size: 2.25rem;
     }
 
+  }
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate(-50%, 50%) translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate(-50%, 50%) translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate(-50%, 50%) translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate(-50%, 50%) translate3d(4px, 0, 0);
+    }
   }
